@@ -1,0 +1,82 @@
+{
+  // Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+
+  "django-lib_view": {
+    "prefix": "django-lib_view",
+    "body": [
+      "from django.core.cache import cache",
+      "from django.http import HttpResponse"
+    ],
+    "description": "django-lib_view"
+  },
+
+  "django-def_view": {
+    "prefix": "django-def_view",
+    "body": [
+      "def main_newapp1(request):",
+      "    cache.clear()",
+      "    # app/templates/main_newapp1.html",
+      "    return render(request, 'main_newapp1.html')",
+      "",
+      "",
+      "def list_newapp2(request):",
+      "    cache.clear()",
+      "    # app/templates/list_newapp2.html",
+      "    return render(request, 'list_newapp2.html')",
+      "",
+      "",
+      "def form_newapp1(request):",
+      "    cache.clear()",
+      "    # app/templates/form_newapp1.html",
+      "    return render(request, 'form_newapp1.html')",
+      "",
+      "",
+      "# 'www\\mydjango\\newapp1\\templates\\main_app.html'",
+      "# 'www\\mydjango\\newapp1\\templates\\main_form.html'",
+      "# 'www\\mydjango\\newapp1\\templates\\main_list.html'"
+    ],
+    "description": "django-def_view"
+  },
+
+  "django-urls-project": {
+    "prefix": "django-urls-project",
+    "body": [
+      "# Acresecnatar o include",
+      "# from django.urls import path, include",
+      "# urlpatterns = [",
+      "#    Aqui o 'admin'",
+      "#    path('admin/', admin.site.urls),",
+      "#    path('', include('newapp1.urls')),",
+      "#    path('newapp2/', include('newapp2.urls')),",
+      "#    ]"
+    ],
+    "description": "django-urls-project"
+  },
+
+  "django-urls-app": {
+    "prefix": "django-urls-app",
+    "body": [
+      "from django.urls import path",
+      "from .views import main_newapp1, form_newapp1, list_newapp1",
+      "",
+      "urlpatterns = [",
+      "    path('', main_newapp1, name='main_newapp1'),",
+      "    path('form_newapp1', form_newapp1, name='form_newapp1'),",
+      "    path('list_newapp1', list_newapp1, name='list_newapp1'),",
+      "]"
+    ],
+    "description": "django-urls-app"
+  }
+}

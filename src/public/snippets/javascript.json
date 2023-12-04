@@ -1,0 +1,110 @@
+{
+  // Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+
+  "script-js-XMLHttpRequest": {
+    "prefix": "script-js-XMLHttpRequest",
+    "body": [
+      "var xmlHttp = new XMLHttpRequest()",
+      "if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {",
+      "}"
+    ],
+    "description": "XMLHttpRequest()"
+  },
+
+  "script-js-open-GET-POST": {
+    "prefix": "script-js-open-GET-POST",
+    "body": [
+      "var urlAddress = \"www/public/arquivo.php?var1=\" + varJS1 + \"&var2=\" + varJS2",
+      "xmlHttp.open(\"GET-POST\", urlAddress, true)",
+      "xmlHttp.send()"
+    ],
+    "description": "Modelo"
+  },
+
+  "script-refresh": {
+    "prefix": "script-refresh",
+    "body": ["onClick=\"window.location.reload()\""],
+    "description": "Modelo"
+  },
+
+  "script-cep-mask": {
+    "prefix": "script-cep-mask",
+    "body": [
+      "$$(\"#cep\").focusout(function() {",
+      "  var v_Cep = $$('#cep').val().replace('-', '').replace('.', '');",
+      "  console.log(\"alguma coisa\");",
+      "  $$.ajax({",
+      "      url: 'https://viacep.com.br/ws/' + v_Cep + '/json/',",
+      "      dataType: 'json',",
+      "      success: function(resposta) {",
+      "          $$(\"#logradouro\").val(resposta.logradouro);",
+      "          $$(\"#complemento\").val(resposta.complemento);",
+      "          $$(\"#bairro\").val(resposta.bairro);",
+      "      }",
+      "  });",
+      "});"
+    ],
+    "description": "Modelo"
+  },
+
+  "script-ajax-table": {
+    "prefix": "ajax-table",
+    "body": [
+      "    $.getJSON(\"https://api.ibge.com.br/municipios\", function(data) {",
+      "",
+      "        var tabela = $('<table>').addClass('table');",
+      "        var cabecalho = $('<thead>').append(",
+      "            $('<tr>').append(",
+      "                $('<th>').text('UF'),",
+      "                $('<th>').text('Código IBGE'),",
+      "                $('<th>').text('Código MUNC IBGE'),",
+      "                $('<th>').text('Município'),",
+      "                $('<th>').text('População'), ",
+      "                $('<th>').text('Teste')",
+      "            )",
+      "        );",
+      "",
+      "        var corpo = $('<tbody>');",
+      "",
+      "        data.result.forEach(function(item) {",
+      "            var linha = $('<tr>').append(",
+      "                $('<td>').text(item.str_uf),",
+      "                $('<td>').text(item.str_cod_uf_ibge),",
+      "                $('<td>').text(item.str_doc_munc_ibge),",
+      "                $('<td>').text(item.str_municipio),",
+      "                $('<td>').text(item.str_populacao),",
+      "                $('<td>').text(\"Coloca Algo Aqui\")",
+      "            );",
+      "",
+      "            corpo.append(linha);",
+      "        });",
+      "",
+      "        tabela.append(cabecalho).append(corpo);",
+      "",
+      "        $('#tabela').append(tabela);",
+      "    });",
+      "<!-- <table id=\"tabela\"></table> -->"
+    ],
+    "description": "Exemplo de Ajax Recebendo API"
+  }
+
+  // "script-modelo": {
+  // 	"prefix": "script-modelo",
+  // 	"body": [
+  // 		""
+  // 	],
+  // 	"description": "Modelo"
+  // },
+}

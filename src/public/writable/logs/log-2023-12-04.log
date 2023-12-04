@@ -1,0 +1,25 @@
+CRITICAL - 2023-12-04 00:00:37 --> Call to a member function isValid() on null
+in APPPATH/Controllers/UploadApiController.php on line 92.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadApiController->toExecute()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadApiController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 00:14:19 --> Call to a member function isValid() on null
+in APPPATH/Controllers/UploadApiController.php on line 92.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadApiController->toExecute()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadApiController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 00:15:56 --> Call to a member function isValid() on null
+in APPPATH/Controllers/UploadApiController.php on line 91.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadApiController->toExecute()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadApiController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 00:21:36 --> Call to a member function isValid() on null
+in APPPATH/Controllers/UploadApiController.php on line 91.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadApiController->toExecute()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadApiController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-04 00:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

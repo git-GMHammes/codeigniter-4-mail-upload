@@ -1,0 +1,91 @@
+CRITICAL - 2023-12-03 21:15:15 --> Invalid file: "codeigniter4/upload/form/main.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('codeigniter4/upload/form/main.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('codeigniter4/upload/form/main.php', [], true)
+ 3 APPPATH/Controllers/UploadEndPointController.php(145): view('codeigniter4/upload/form/main.php', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadEndPointController->toExecute()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadEndPointController))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 21:16:33 --> Invalid file: "codeigniter4/template/main.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('codeigniter4/template/main.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('codeigniter4/template/main.php', [], true)
+ 3 APPPATH/Controllers/UploadEndPointController.php(145): view('codeigniter4/template/main.php', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadEndPointController->toExecute()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadEndPointController))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 21:17:22 --> Invalid file: "codeigniter4head.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('codeigniter4head.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('codeigniter4head', [], true)
+ 3 APPPATH/Views/codeigniter4/template/main.php(14): view('codeigniter4head')
+ 4 SYSTEMPATH/View/View.php(228): include('/var/www/html/app/Views/codeigniter4/template/main.php')
+ 5 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('codeigniter4/template/main.php', [], true)
+ 7 APPPATH/Controllers/UploadEndPointController.php(145): view('codeigniter4/template/main.php', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadEndPointController->toExecute()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadEndPointController))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 21:17:52 --> Invalid file: "codeigniter4h/ead.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('codeigniter4h/ead.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('codeigniter4h/ead', [], true)
+ 3 APPPATH/Views/codeigniter4/template/main.php(14): view('codeigniter4h/ead')
+ 4 SYSTEMPATH/View/View.php(228): include('/var/www/html/app/Views/codeigniter4/template/main.php')
+ 5 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('codeigniter4/template/main.php', [], true)
+ 7 APPPATH/Controllers/UploadEndPointController.php(145): view('codeigniter4/template/main.php', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadEndPointController->toExecute()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadEndPointController))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 21:18:34 --> Invalid file: "codeigniter4h/head.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('codeigniter4h/head.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('codeigniter4h/head', [], true)
+ 3 APPPATH/Views/codeigniter4/template/main.php(14): view('codeigniter4h/head')
+ 4 SYSTEMPATH/View/View.php(228): include('/var/www/html/app/Views/codeigniter4/template/main.php')
+ 5 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('codeigniter4/template/main.php', [], true)
+ 7 APPPATH/Controllers/UploadEndPointController.php(145): view('codeigniter4/template/main.php', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadEndPointController->toExecute()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadEndPointController))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 21:19:53 --> Invalid file: "codeigniter4/footer.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('codeigniter4/footer.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('codeigniter4/footer', [], true)
+ 3 APPPATH/Views/codeigniter4/template/main.php(14): view('codeigniter4/footer')
+ 4 SYSTEMPATH/View/View.php(228): include('/var/www/html/app/Views/codeigniter4/template/main.php')
+ 5 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('codeigniter4/template/main.php', [], true)
+ 7 APPPATH/Controllers/UploadEndPointController.php(145): view('codeigniter4/template/main.php', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadEndPointController->toExecute()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadEndPointController))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 22:34:22 --> Call to undefined function App\Controllers\myPrint()
+in APPPATH/Controllers/UploadApiController.php on line 86.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadApiController->toExecute()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadApiController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 22:36:20 --> Call to undefined function App\Controllers\myPrint()
+in APPPATH/Controllers/UploadApiController.php on line 86.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadApiController->toExecute()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadApiController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 22:52:28 --> Call to a member function isValid() on null
+in APPPATH/Controllers/UploadApiController.php on line 90.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UploadApiController->toExecute()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadApiController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-03 23:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 23:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 23:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

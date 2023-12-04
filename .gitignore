@@ -1,0 +1,6 @@
+
+src/public/writable/cache/**
+src/public/writable/debugbar/**
+src/public/writable/logs/**
+src/public/writable/session/**
+src/public/writable/uploads/**
